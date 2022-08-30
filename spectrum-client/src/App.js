@@ -5,7 +5,9 @@ import Home from './components/Home';
 import Recordings from './components/Recordings';
 import './App.css';
 
-export const DOMAIN="http://localhost:5000"
+// export const DOMAIN="http://localhost:5000"
+export const DOMAIN=""
+
 export const Tabs={
   HOME:"Home",
   RECORD:"Record",

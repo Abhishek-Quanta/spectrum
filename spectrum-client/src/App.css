@@ -1,0 +1,148 @@
+:root{
+  --violet:#2A0944;
+  --green:#3FA796;
+  --yellow:#FEC260;
+  --red:#A10035;
+  --shadow:#343434;
+  font-family: 'DM Sans', sans-serif;
+}
+/* main{
+  min-height: 100vh;
+} */
+header{
+  background-color:var(--violet);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position:fixed;
+  width: 100%;
+  box-shadow: 0px 0px 5px var(--shadow);
+}
+nav{
+  flex:1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+nav span{
+  padding: .5rem 1rem;
+  /* margin: 0 4rem; */
+  color: #fff;
+  font-variant-caps: all-small-caps;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+body{
+  background-color: var(--red);
+  background-image: url("../public/home.svg");
+  background-repeat: no-repeat;
+}
+.app-icon{
+  padding: .5rem 1rem;
+  height: 4rem;
+}
+.small-icon{
+  height: 1.2rem;
+  cursor:pointer;
+}
+.home-svg{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.home-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding:0 5vw;
+  padding-top: 0px;
+}
+.home-div-heading{
+  font-size: xxx-large;
+  font-weight: bold;
+  color: #fff;
+}
+button,.but{
+  cursor: pointer;
+  font:inherit;
+  border: none;
+  color: #fff;
+  background-color: var(--green);
+  border-radius: 2rem;
+  padding: .8rem 1.2rem;
+  margin: .2rem;
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.text-center{
+  text-align: center;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label{
+  font-size: .9rem;
+  font-weight: bold;
+}
+input{
+  font:inherit;
+  margin-bottom:.1rem;
+  margin-top: .2rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(196, 196, 196);
+  border-radius: .3rem;
+}
+.link-span{
+  font-size: .8rem;
+  color: var(--violet);
+  cursor: pointer;
+}
+.error-span{
+  font-size: .7rem;
+  color: red;
+  min-height: 1rem;
+}
+.msg-span{
+  font-size: .7rem;
+  color: green;
+  padding: .2rem;
+}
+.back-span{
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  top:1rem;
+  left: 1rem;
+}
+.back-span:hover{
+  color: var(--violet);
+}
+video{
+  width: 80%;
+  height:75vh;
+  border-radius:0 0 .8rem .8rem;
+  object-fit: cover;
+}
